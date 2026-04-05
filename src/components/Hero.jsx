@@ -56,17 +56,22 @@ const Hero = () => {
       <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
         <div className="text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-            John Doe
+            Rahul Gowda B V
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 fade-in-up">
-            Software Development Engineer in Testing
+            Tech Lead & SDET Architect
           </p>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto fade-in-up delay-100">
-            Crafting robust test automation frameworks and ensuring software quality excellence
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto fade-in-up">
+            Building AI-Driven Quality Engineering Solutions for Fintech
           </p>
-          <button className="mt-8 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-white font-semibold text-lg hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 fade-in-up delay-200 pointer-events-auto">
-            View My Work
-          </button>
+          <div className="flex flex-wrap justify-center gap-4 mt-6 fade-in-up delay-200 pointer-events-auto">
+            <a href="mailto:bv.rahulgowda@gmail.com" className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-white font-semibold text-lg hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300">
+              Get in Touch
+            </a>
+            <a href="https://www.linkedin.com/in/rahul-gowda-bv" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border-2 border-purple-600 text-purple-400 rounded-full font-semibold text-lg hover:bg-purple-600/20 transform hover:scale-105 transition-all duration-300">
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
 

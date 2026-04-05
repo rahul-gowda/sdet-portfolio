@@ -3,28 +3,32 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: "Enterprise API Testing Framework",
-    description: "Developed a comprehensive API testing framework supporting 500+ endpoints with automated regression testing.",
-    tech: ["Python", "Pytest", "Requests", "Docker"],
-    image: "api-framework.jpg"
+    title: "🤖 AI API Tester – Autonomous Validation Tool",
+    description: "AI-powered tool using LLM integration to auto-generate assertions & detect anomalies. Enabled non-technical QA and reduced false positives by 70%.",
+    tech: ["Python", "OpenAI API", "FastAPI", "JSON Schema", "Pytest"],
+    impact: "50% faster script creation • 70% fewer false positives",
+    link: "https://github.com/rahul-gowda"
   },
   {
-    title: "Mobile App Automation Suite",
-    description: "Built cross-platform mobile testing solution covering iOS and Android with real device testing capabilities.",
-    tech: ["Appium", "Selenium", "Java", "TestNG"],
-    image: "mobile-testing.jpg"
+    title: "🔍 Browser Extension for Auto-Locator Capture",
+    description: "Chrome/Firefox extension capturing multi-strategy locators with one click for dynamic fintech UIs. Adopted by 3 global teams.",
+    tech: ["JavaScript", "Chrome Extension API", "Playwright Selector Engine"],
+    impact: "3x faster script development • 44% less flakiness",
+    link: "https://github.com/rahul-gowda"
   },
   {
-    title: "Performance Testing Platform",
-    description: "Created scalable performance testing infrastructure supporting load tests up to 1M concurrent users.",
-    tech: ["JMeter", "Gatling", "Kubernetes", "Prometheus"],
-    image: "performance-test.jpg"
+    title: "🛡️ 3DS 2.0 Playwright Automation Framework",
+    description: "Specialized Playwright framework with context isolation & dynamic challenge detection for iframe auth & MFA redirects.",
+    tech: ["Playwright (TypeScript)", "Docker", "Jenkins", "3DS 2.0 Protocol"],
+    impact: "100% automated coverage • 3 days → 4 hours regression",
+    link: "https://github.com/rahul-gowda"
   },
   {
-    title: "CI/CD Quality Gate Implementation",
-    description: "Integrated automated quality gates into CI/CD pipelines reducing production defects by 75%.",
-    tech: ["Jenkins", "GitHub Actions", "SonarQube", "JUnit"],
-    image: "ci-cd-quality.jpg"
+    title: "⚡ One-Click Release Pipeline",
+    description: "Integrated Jira→Zephyr→Jenkins pipeline automating deployment sign-offs and reducing manual intervention.",
+    tech: ["Jenkins", "GitHub Actions", "Jira API", "Zephyr"],
+    impact: "20+ hrs/week saved • 3 days → 4 hours deployment sign-off",
+    link: "https://github.com/rahul-gowda"
   }
 ];
 
@@ -42,7 +46,7 @@ const Projects = () => {
           Featured Projects
         </h2>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          Showcasing impactful testing solutions and quality engineering initiatives
+          Showcasing AI-driven automation tools and fintech testing solutions
         </p>
       </motion.div>
 
@@ -57,12 +61,16 @@ const Projects = () => {
             className="bg-gray-900 rounded-2xl overflow-hidden shadow-xl hover-lift group"
           >
             <div className="relative overflow-hidden h-48 bg-gradient-to-br from-purple-900 to-blue-900 flex items-center justify-center">
-              <span className="text-purple-300 text-lg font-medium">{project.title}</span>
+              <span className="text-purple-300 text-lg font-medium px-4 text-center">{project.title}</span>
             </div>
             
             <div className="p-6">
               <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
               <p className="text-gray-400 mb-4">{project.description}</p>
+              
+              <div className="mb-4 p-3 bg-purple-600/10 border border-purple-600/20 rounded-lg">
+                <p className="text-purple-300 text-sm font-medium">{project.impact}</p>
+              </div>
               
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech, techIndex) => (
@@ -75,9 +83,14 @@ const Projects = () => {
                 ))}
               </div>
               
-              <button className="text-purple-400 hover:text-purple-300 font-medium transition-colors duration-300">
-                View Case Study →
-              </button>
+              <a 
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-400 hover:text-purple-300 font-medium transition-colors duration-300 inline-flex items-center"
+              >
+                View on GitHub →
+              </a>
             </div>
           </motion.div>
         ))}

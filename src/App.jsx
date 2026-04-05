@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Hero from './components/Hero';
 import About from './components/About';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -10,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const containerRef = useRef();
-
+  
   useEffect(() => {
     const sections = document.querySelectorAll('.section');
     
@@ -46,6 +47,12 @@ function App() {
         <section className="section px-4 md:px-8">
           <div className="max-w-6xl mx-auto w-full">
             <About />
+          </div>
+        </section>
+
+        <section className="section px-4 md:px-8">
+          <div className="max-w-6xl mx-auto w-full">
+            <Experience />
           </div>
         </section>
 

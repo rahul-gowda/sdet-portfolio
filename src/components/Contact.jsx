@@ -7,19 +7,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "john.doe@email.com",
-      link: "mailto:john.doe@email.com"
+      value: "bv.rahulgowda@gmail.com",
+      link: "mailto:bv.rahulgowda@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+91 900 887 7026",
+      link: "tel:+919008877026"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Bengaluru, India",
       link: "#"
     }
   ];
@@ -28,17 +28,12 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com/johndoe"
+      url: "https://github.com/rahul-gowda"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/johndoe"
-    },
-    {
-      icon: ExternalLink,
-      label: "Resume",
-      url: "/resume.pdf"
+      url: "https://www.linkedin.com/in/rahul-gowda-bv"
     }
   ];
 
@@ -55,7 +50,7 @@ const Contact = () => {
           Let's Connect
         </h2>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          Interested in working together? Feel free to reach out!
+          Ready to discuss how AI-driven automation can accelerate your quality engineering?
         </p>
       </motion.div>
 
